@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{}
+
+.hTop{
+    background: #282828;
+    font-size:12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.hTop a{
+    color:#fff;
+    display: block;
+    border-left:1px solid #231f20;
+    padding:0 30px;
+}
+
+.engBtn{float:left}
+.engBtn a{border-right:1px solid #231f20;}
+
+.util{float:right;}
+.util li{float:left;}
+.util li:last-child a{padding-right:0;}
+.util li img{margin-left:5px;}
+
+
+.hBottom{
+    height:80px;
+    line-height:80px;
+}
+.hBottom h1{
+    float:left;
+    /*height 줘서 cf 안줘도 됨*/
+}
+.hBottom h1 a{}
+.hBottom h1 img{width:150px;}
+
+.gnb{float:right;}
+.gnb>li{
+    float:left;
+    font-family: 'NanumMyeongjo',serif;
+    font-weight: 900;
+    margin-left:50px;
+    position: relative; /*서브때매 만듦*/
+}
+
+.gnb>li::after{
+    content: "";
+    display: block;
+    height: 3px;
+    background: #333;
+    margin-top:-3px;
+    transform:scale(0,1);
+    transition:transform 0.3s linear;
+}
+
+.gnb>li:hover::after{
+    transform: scale(1,1);
+}
+
+/*lnb*/
+
+.lnb{
+    width:100%;
+    position:absolute;
+    z-index:1;
+    overflow: hidden;
+    background: #fff;
+    max-height: 0;
+    line-height: 40px;    
+    text-align: center;
+    transition:max-height 0.6s linear;
+}
+
+.gnb>li:hover .lnb{
+    max-height: 500px;
+}
+
+.lnb li{}
+
+.lnb li a{}
+
+
+
+/*footer*/
+
+#footer{
+    background: #1e1e1e;
+    color:#8c8c8c;
+    position: relative;
+    font-size:12px;
+}
+
+#footer a{color:#8c8c8c;}
+
+.fTop{
+    background: #282828;
+    padding:50px 0;
+}
+
+.topBtn{
+    width:102px;
+    height: 39px;/*bg줄때 가로세로값 있어야 됨 */
+    background: url(../images/common/btn_go_top.png)no-repeat;
+    position: absolute;
+    top:-39px;
+    left:50%;
+    margin-left:-51px;
+}
+
+.topBtn a{
+    display: block;
+    height: 100%; /*width값 없어서 padding 밖으로 안나감 height는 나감 ㅋ_ㅋ*/
+    padding-top:12px;
+    padding-left:30px;
+    box-sizing: border-box;
+}
+
+.fMenu{
+    float:left;
+    margin-right:80px;
+}
+.fMenu dt{
+    font-family: 'NanumMyeongjo',serif;
+    font-weight: 900;
+    font-size:16px;
+    background: url(../images/common/bar_snb.gif)no-repeat left bottom;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.fMenu dd{line-height: 25px}
+.fMenu dd a{}
+
+
+.fBottom{}
+
+.fBottom{
+    position: relative;
+    padding: 50px 0;
+}
+
+.fLogo{margin-bottom: 30px;}
+.fLogo img{
+    width:180px;
+}
+/*a태그 있는 경우 상위 div 에 width값 주고, img:100% 쥼
+if Not: a태그 블록주면 범위가 블록자체가 됨*/
+
+.fInfo{overflow: hidden;}
+.fInfo li{
+    float:left;
+    /*inline-block줘도 됨, 근데 공백이 생긴다는데 어딘지 찾찾*/
+}
+
+.fInfo li::after{
+    content: "";
+    display: inline-block;
+    width:1px;
+    height: 8px;
+    background: #2d3333;
+    margin:0 5px;
+}
+
+.fInfo li:last-child::after{display: none;}
+
+.fInfo li a{}
+
+.copy{margin-top:30px;}
+
+.fSns{
+    position: absolute;
+    right:0;
+    top:50px;
+}
+
+.fSns li{
+    float:left;
+    margin-left:5px;
+    
+    
+}
+.fSns li a{}
+.fSns li img{
+    width:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

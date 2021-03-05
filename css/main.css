@@ -1,0 +1,272 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainSlider img{
+    position: absolute;
+    left:50%;
+    margin-left:-960px;
+}
+
+/*mainCon01*/
+.mainCon01{
+    text-align: center;
+    background: #f5f5f5 url(../images/main/bg_bar_div.gif)no-repeat center center;
+    padding: 50px 0;
+    
+}
+
+.mainCon01>div{
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    padding:0 50px;
+}
+.mainCon01>div span{display: block;}
+
+.mainCon01 .con01L{padding-left:130px;}
+.con01L h2{
+    font-size: 30px;
+    color:#711b04;
+    margin-bottom: 30px;
+}
+.con01L p{}
+.con01L span{}
+
+.con01R{
+    font-size: 14px;
+    line-height:25px;
+}
+.con01L span{}
+
+.plusBtn{
+    width:40px;
+    height: 40px;
+    background:url(../images/main/btn_more02.png)no-repeat;
+    background-size:100%;
+    text-indent:-9999px;
+    margin-top:20px;
+    
+}
+
+.plusBtn a{
+    display: block;
+    height: 100%;
+}
+
+/*mainCon02*/
+.mainCon02{
+    background: url(../images/main/visual01.jpg)no-repeat center center;
+    background-attachment:fixed;
+    background-size:cover;
+    /*상위2개 거의 세트로 씀*/
+    color:#fff;
+    text-align: center;
+    padding:100px 0 50px 0;
+}
+
+.mainCon02 h2{
+    font-family: 'NotoSans', sans-serif;
+    font-weight:300;
+    background: url(../images/main/tit_line_bot.png)no-repeat center bottom;
+    padding-bottom: 15px;    
+}
+
+.mainCon02 p{
+    font-size:12px;
+    margin-top:15px;
+    line-height:22px;
+    font-weight: 100;
+}
+
+.mainCon02 p span{display: block;}
+
+.mainCon02 .con02SubTit{
+    font-size:14px;
+    font-weight:300;    
+}
+
+.mainCon02 .plusBtn{
+    background-image:url(../images/main/btn_more.png);
+    margin:0 auto;
+    margin-top:50px;
+}
+
+/*mainCon03*/
+
+.mainCon03{
+    text-align: center;
+    padding:80px 0;
+}
+
+.con03Tit{}
+.con03Tit h2{color:#711b04;}
+.con03Tit p{margin:20px 0}
+
+.con03Menu{}
+.con03Menu li{
+    float:left;
+    position: relative; /*re은 형제한테 줘도 효과x, 부모에게 줘야 함*/
+    margin-left:3px;
+    margin-top:3px;
+    overflow: hidden;
+}
+
+.con03Menu li:first-child{margin-left:0;}
+
+.con03Menu li a{}
+
+.con03Menu li img{
+    display: block;
+    /*인라인(이미지)때문에 공백있는데 해제하려고 block 줌*/
+    transition:transform 0.3s linear;
+}
+
+.con03Menu li:hover img{
+    transform: scale(1.2);
+}
+
+.menuInfo{
+    position:absolute;
+    bottom:20px;
+    width:100%;
+}
+.menuInfo h3{
+    font-size:16px;    
+    color:#7d645a;
+}
+.menuInfo p{
+    font-size:12px;
+    font-weight: 300;
+}
+
+/*mainCon04*/
+
+.mainCon04{
+    background-image:url(../images/main/visual02.jpg);
+    background-attachment: inherit;
+    padding:150px 0; 
+}
+
+
+
+.mainCon04 h2{
+    font-family: 'NanumMyeongjo',serif;
+    font-weight: 900
+    
+}
+
+.mainCon04 .searchBtn{
+    width:280px;
+    background-image:url(../images/main/btn_find_store.png);
+    /*con02에 plusBtn bg size=100% 이미줘서 다 보임 chk-chk*/
+    background-position: center bottom;
+}
+
+
+/*mainCon05*/
+
+.mainCon05{
+    background: #beb4af;
+    color:#fff;    
+    text-align: center;
+    padding:50px 0;
+}
+
+.mainCon05 h2,.mainCon05 p,.mainCon05 .plusBtn{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.mainCon05 h2{}
+.mainCon05 p{margin:0 20px 0 50px}
+
+.mainCon05 .plusBtn{margin-top:0;}
+.mainCon05 .plusBtn a{}
+
+/*mainCon06*/
+
+.mainCon06{
+    background: url(../images/main/bg_visual.jpg)no-repeat center center;
+    background-size:cover;
+    padding:80px 0;
+}
+
+.con06List{}
+.con06List li{
+    width:25%;
+    text-align: center;
+    float:left;
+    height: 150px;
+    font-family: 'NanumMyeongjo',serif;
+    font-weight: 900;
+    padding:0 20px;
+    box-sizing:border-box;
+}
+.con06List li h3{
+    font-size:18px;
+    color:#7d645a;
+    margin-bottom: 20px;
+    
+}
+
+.con06List li h3 img{
+    width:20px;
+    vertical-align: middle;
+}
+
+.con06List li h3 span{
+    vertical-align: middle;
+}
+
+.con06List li p{font-size:14px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
